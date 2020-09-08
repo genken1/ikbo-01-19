@@ -17,6 +17,7 @@ public class Variant5 {
 
     public static int countFactorial(int num) {
         int r = 1;
+
         while (num > 0) {
             r *= num;
             num--;
