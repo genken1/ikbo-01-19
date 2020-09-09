@@ -1,7 +1,7 @@
 ### Folders ###
 HELP.md
 target/
-!**/src/ru/mirea/**
+!**/src/com/company/**
 **/out/**
 .DS_Store
 
@@ -10,14 +10,3 @@ target/
 *.iws
 *.iml
 *.ipr
-
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-
-### VS Code ###
-.vscode/
