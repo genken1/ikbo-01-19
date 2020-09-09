@@ -6,7 +6,7 @@ public class TestBook {
         System.out.println(book.toString());
 
         Book book2 = new Book();
-        book.setName("The Menagerie");
+        book2.setName("The Menagerie");
         book2.setAuthor("Arthur Conan Doyl");
         book2.setYear(1211);
         book2.setAmountStar(10);
