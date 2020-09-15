@@ -1,9 +1,6 @@
 package com.company;
 
-import com.company.Exercise2.Circle;
-import com.company.Exercise2.Rectangle;
-import com.company.Exercise2.Shape;
-import com.company.Exercise2.Square;
+import com.company.Exercise2.*;
 
 public class Exercise3 {
     public static void main(String[] args) {

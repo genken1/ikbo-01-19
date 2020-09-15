@@ -12,6 +12,10 @@ public class MovableRectangle implements Movable {
         bottomRight = new MovablePoint(x2, y2, xSpeed, ySpeed);
     }
 
+    public boolean samePoint(){
+        return topLeft.getxSpeed()==bottomRight.getxSpeed() && topLeft.getySpeed()==bottomRight.getySpeed();
+    }
+
     @Override
     public void moveUp() {
         topLeft.moveUp();

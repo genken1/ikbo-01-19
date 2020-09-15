@@ -61,6 +61,7 @@ public class MatchView extends JFrame {
 
         setSize(470, 250);
         setVisible(true);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
     public void printInfo(String name){
