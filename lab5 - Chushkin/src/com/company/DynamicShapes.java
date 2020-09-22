@@ -8,10 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class DynamicShapes extends JPanel implements ActionListener {
-    private final int delay = 100;
-    private int current;
-    private Timer timer;
+public class DynamicShapes extends JPanel{
 
     private List<Shape> shapes = new ArrayList<>();
     private Random random = new Random(System.currentTimeMillis());
@@ -35,25 +32,14 @@ public class DynamicShapes extends JPanel implements ActionListener {
                 break;
         }
 
-        startAnimation();
-    }
-
-    private void startAnimation() {
-        if (timer == null) {
-            current = 0;
-            timer = new Timer(delay, this);
-            timer.start();
-        } else if (!timer.isRunning()) {
-            timer.restart();
-        }
     }
 
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
         for (Shape s : shapes) {
-            getRootPane().setBackground(new Color(random.nextFloat(), random.nextFloat(), random.nextFloat()));
-            setBackground(new Color(random.nextFloat(), random.nextFloat(), random.nextFloat()));
+            // getRootPane().setBackground(new Color(random.nextFloat(), random.nextFloat(), random.nextFloat()));
+            // setBackground(new Color(random.nextFloat(), random.nextFloat(), random.nextFloat()));
             s.setColor(new Color(random.nextFloat(), random.nextFloat(), random.nextFloat()));
             s.draw(g);
         }
@@ -61,21 +47,13 @@ public class DynamicShapes extends JPanel implements ActionListener {
 
     public void addCircle(Color color, int maxX, int maxY) {
         shapes.add(new Circle(new Color(random.nextFloat(), random.nextFloat(), random.nextFloat()), maxX, maxY));
-        repaint();
     }
 
     public void addSquare(Color color, int maxX, int maxY) {
         shapes.add(new Square(new Color(random.nextFloat(), random.nextFloat(), random.nextFloat()), maxX, maxY));
-        repaint();
     }
 
     public void addEllipse(Color color, int maxX, int maxY) {
         shapes.add(new Ellipse(new Color(random.nextFloat(), random.nextFloat(), random.nextFloat()), maxX, maxY));
-        repaint();
-    }
-
-    @Override
-    public void actionPerformed(ActionEvent e) {
-        repaint();
     }
 }
