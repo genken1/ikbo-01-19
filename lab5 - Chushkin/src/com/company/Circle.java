@@ -4,7 +4,7 @@ import java.awt.*;
 import java.awt.geom.Ellipse2D;
 
 public class Circle extends Shape{
-    public Circle(Color color, /*String colorName,*/ int x, int y) {
+    public Circle(Color color, int x, int y) {
         super(color, /*colorName,*/ x, y);
     }
 

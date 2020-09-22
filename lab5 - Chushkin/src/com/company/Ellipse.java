@@ -4,8 +4,8 @@ import java.awt.*;
 import java.awt.geom.Ellipse2D;
 
 public class Ellipse extends Shape{
-    public Ellipse(Color color, /*String colorName,*/ double xPosition, double yPosition) {
-        super(color,/* colorName,*/ xPosition, yPosition);
+    public Ellipse(Color color, double xPosition, double yPosition) {
+        super(color, xPosition, yPosition);
     }
 
     @Override

@@ -53,7 +53,7 @@ public class Game extends JFrame {
     }
 
     private void addInputElement() {
-        button = new JButton("Обработать ОЧКО");
+        button = new JButton("Обработать");
         textField = new JTextField();
         label = new JLabel(rules, SwingConstants.CENTER);
 

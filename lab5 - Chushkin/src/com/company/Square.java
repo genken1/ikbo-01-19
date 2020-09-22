@@ -4,8 +4,8 @@ import java.awt.*;
 import java.awt.geom.Rectangle2D;
 
 public class Square extends Shape{
-    public Square(Color color, /*String colorName,*/ double xPosition, double yPosition) {
-        super(color,/* colorName,*/ xPosition, yPosition);
+    public Square(Color color, double xPosition, double yPosition) {
+        super(color, xPosition, yPosition);
     }
 
     @Override

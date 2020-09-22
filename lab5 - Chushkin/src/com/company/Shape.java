@@ -4,14 +4,12 @@ import java.awt.*;
 
 public abstract class Shape {
     private Color color;
-    // private String colorName;
 
     private double xPosition;
     private double yPosition;
 
-    public Shape(Color color, /*String colorName,*/ double xPosition, double yPosition) {
+    public Shape(Color color, double xPosition, double yPosition) {
         this.color = color;
-        // this.colorName = colorName;
         this.xPosition = xPosition;
         this.yPosition = yPosition;
     }
