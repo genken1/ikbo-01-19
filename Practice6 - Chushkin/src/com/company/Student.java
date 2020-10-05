@@ -18,14 +18,14 @@ public class Student implements Comparable<Student>{
     }
 
     @Override
+    public int compareTo(Student o) {
+        return Integer.compare(o.getMarks(), getMarks());
+    }
+
+    @Override
     public String toString() {
         return "Student{" +
                 "marks=" + marks +
                 '}';
-    }
-
-    @Override
-    public int compareTo(Student o) {
-        return Integer.compare(o.getMarks(), getMarks());
     }
 }
