@@ -1,6 +1,9 @@
 package com.company.Interfaces;
 
 
+import com.company.Models.Customer;
+import com.company.Models.MenuItem;
+
 public interface Order {
 	boolean add(MenuItem item);
 

@@ -20,13 +20,13 @@ public enum DrinkTypeEnum {
 	WATER("non-alcohol"),
 	SODA("non-alcohol");
 
-	private final String obj;
+	private final String objName;
 
-	DrinkTypeEnum(String obj) {
-		this.obj = obj;
+	DrinkTypeEnum(String objName) {
+		this.objName = objName;
 	}
 
 	public boolean isAlcohol() {
-		return obj.equals("alcohol");
+		return objName.equals("alcohol");
 	}
 }

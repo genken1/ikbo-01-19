@@ -1,6 +1,6 @@
 package com.company.Interfaces;
 
-import ru.mirea.lab16.models.MenuItem;
+import com.company.Models.MenuItem;
 
 public interface OrdersManager {
 	int itemsQuantity(String itemName);
