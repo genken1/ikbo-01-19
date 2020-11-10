@@ -20,16 +20,25 @@ public final class Dish implements Item {
 
 	@Override
 	public int getCost() {
-		return 0;
+		return cost;
 	}
 
 	@Override
 	public String getName() {
-		return null;
+		return name;
 	}
 
 	@Override
 	public String getDescription() {
-		return null;
+		return description;
+	}
+
+	@Override
+	public String toString() {
+		return "Dish{" +
+				"cost=" + cost +
+				", name='" + name + '\'' +
+				", description='" + description + '\'' +
+				'}';
 	}
 }
